@@ -1,0 +1,17 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user_db
+    username: postgres
+    password: HRS05
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+conductor:
+  server:
+    url: https://play.orkes.io/api
+  security:
+    client.key-id: __KEY__
+    client.secret: __SECRET__
