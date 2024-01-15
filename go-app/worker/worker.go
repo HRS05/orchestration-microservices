@@ -14,10 +14,13 @@ import (
 func RunWorker() {
 	fmt.Println("Wroker running start")
 
+	var KEY = "__KEY__"
+	var SECRET = "__SECRET__"
+
 	apiClient := client.NewAPIClient(
 		settings.NewAuthenticationSettings(
 			KEY,
-			SECRATE,
+			SECRET,
 		),
 		settings.NewHttpSettings(
 			"https://play.orkes.io/api",
